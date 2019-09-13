@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--get passa na url, post passa as informações escondidas-->
+    <form method="GET" action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <input type="password" name="senha">
+        <input type="submit" value="Enviar">
+
+        <input type="checkbox" name="cursos" value="op1"> React native
+        <input type="checkbox" name="cursos" value="op2"> React js
+
+        <input type="radio" name="gender" value="m" checked>masc
+        <input type="radio" name="gender" value="m">Fem
+
+        <input type="reset" value="Limpar campos"><!--esse botão server para limpar todos os campos do formulario-->
+
+    </form>
+</body>
+</html>

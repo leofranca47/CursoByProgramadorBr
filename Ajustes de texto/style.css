@@ -1,0 +1,14 @@
+body{
+    font-size: 1,2rem;
+}
+#container{
+    color: yellow;
+    background-color: blue;
+    width: 300px;
+    height: 100px;
+
+    overflow: visible; /*padrão*/
+    overflow: hidden; /*oculta o que estiver fora*/
+    overflow: scroll; /*coloca o scroll horizontal e vertical*/
+    overflow: auto; /*coloca o scroll onde realmente precisa*/
+}

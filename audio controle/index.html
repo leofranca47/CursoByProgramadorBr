@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>audio</title>
+    <style>
+        #container{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            
+        }
+    #controle{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            text-align: center;
+            
+        }
+        
+        
+        .btn{
+            position: relative;
+            width: 50px;
+            top: 50%;
+            
+        }
+    </style>
+
+</head>
+<body>
+        <audio controls>
+                <source src="t_voice5003974076247572551.ogg" type="audio/ogg">
+            </audio>
+    <div id="container">
+    
+    <div id="controle">
+        <img class="btn" src="atras.png" alt="" onclick="atras()">
+        <img class="btn" src="play.png" alt="" onclick="play()">
+        <img class="btn" src="avanca.png" alt="" onclick="avanca()">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

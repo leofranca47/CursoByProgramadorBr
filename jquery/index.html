@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery</title>
+    <style>
+        .square{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: absolute;
+            display: none;
+        }
+
+        .blue{
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            position: absolute;
+            display: none;
+        }
+
+        .bg_blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- parte 1 -->
+    <!-- <h1 class="title">jquery</h1>
+    <button id="butaoin">fade in</button>
+    <button id="butaoout">fade out</button>
+    <button id="butaotoggle">fade toggle</button>
+    <button id="butaoanimate">fade animate</button>
+    <div class="square"></div>
+    <div class="blue"></div> -->
+
+    <!-- parte 2 -->
+    <ul id="lista1">
+        <li class="item1">item 1</li>
+        <li class="item2">item 2</li>
+        <li class="item3">item 3</li>
+        <li class="item4">item 4</li>
+    </ul>
+    <ul id="lista2">
+        <li class="item1">item 1</li>
+        <li class="item2">item 2</li>
+        <li class="item3">item 3</li>
+        <li class="item4">item 4</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- script da parte 1 -->
+    <!-- <script>
+        $(document).mouseleave(()=>{
+            // alert("compre algo antes de fechar, tenho promoções")
+        })
+
+        $("#butaoin").click(()=>{
+            $(".square").fadeIn(3000, ()=>{
+                $(".blue").show(3000)
+            })
+        })
+        $("#butaoout").click(()=>{
+            $(".blue").fadeOut(3000, ()=>{
+                $(".square").hide(3000)
+            })
+        })
+        $("#butaotoggle").click(()=>{
+            $(".square").fadeToggle(3000, ()=>{
+                $(".blue").hide(3000)
+            })
+        })
+        $("#butaoanimate").click(()=>{
+            $(".square").animate({width: 400, height: 600},3000)
+        })
+    </script> -->
+<!-- script da parte2 -->
+    <!-- <script>
+        // $(".item2").hide()
+        // let item = $("#lista1 .item2").hide()
+        let lista = $("#lista1");
+        console.log(lista.find(".item3").fadeOut());
+        let lista2 = $("#lista2");
+        console.log(lista2.children(".item4").fadeOut())
+
+
+    </script> -->
+    <input type="text" id="idinput" name="idinput" value="testando">
+    <script src="script.js"></script>
+</body>
+</html>

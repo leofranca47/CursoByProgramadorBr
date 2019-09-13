@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var contagem = 0
+        var timer
+        function iniciar(){
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML = contagem
+            contagem ++
+        }
+        function parar(){
+            //clearTimeout(timer)
+            clearInterval(timer)
+        }
+
+        function iniciarI(){
+           //timer =  setTimeout(iniciar, 1000) executa apenas uma vez
+           timer = setInterval(iniciar, 1000)
+        }
+    </script>
+</head>
+<body>
+    <h1>cronometro</h1>
+    <button onclick="iniciarI()">iniciar</button>
+    <button onclick="parar()">Parar</button>
+</body>
+</html>
